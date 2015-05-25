@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/background.png");
+  background-size: cover; }
+
+.center-text {
+  text-align: center; }
+
+Bootstrap style
+.row {
+  border-color: white; }
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0; }
+
+.content {
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.5); }
+
+.show {
+  background-image: url("../img/square2.jpg"); }

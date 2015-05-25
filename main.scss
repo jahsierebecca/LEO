@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../img/background.png');
+	background-size: cover;
+}
+
+//.center-block
+
+.center-text {
+	text-align: center;
+}
+
+
+
+Bootstrap style
+.row {
+	// border: 1px solid white;
+	border-color: white;
+	// height: 8%;
+	// background-color: red;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	box-sizing: border-box;
+	// border: 1px solid red;
+	height: 100%;
+	padding: 0;
+	// background-color: pink;
+}
+
+.content {
+	// background-image: url("../img/square.png");
+	// background-color: red;
+	background-size: cover;
+	box-sizing: border-box;
+	// border: 1px solid yellow;
+	height: 100%;
+	border: 5px solid rgba(255, 255, 255, .5);	
+	// padding: 15px;
+	// background-positio
+}
+
+// .tall-2 {
+// 	height: 16.33%;
+// }
+
+.tall-4 {
+	// height: ;
+}
+
+.show {
+	background-image: url("../img/square2.jpg");
+}
+
+// .tall {
+// 	height: 33.33vh;
+// }
+// //end bootstrap style
+
+
+// .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, {
+//     float:left;
+//     position: relative;
+//     width: 8%;
+//     padding-bottom : 8%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: pink;
+//     overflow:hidden;
+//     clear: none;
+// }
+
+
+
+// .col-md-1 {
+// 	width: 8%;
+//     padding-bottom : 8%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: red;
+// }
+
+// .col-md-2 {
+// 	width: 16.33%;
+//     // padding-bottom : 16%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: yellow;
+// }
+
+// .col-md-3 {
+// 	width: 25;
+//     // padding-bottom : 24%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: green;
+// }
+
+// .col-md-4 {
+// 	width: 32.66%;
+//     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: purple
+// }
+
+// .col-md-6 {
+// 	width: 49.32%;
+//     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
+//     margin:.165%;
+//     background-color: green;
+// }
+
+// .col-md-12 {
+// 	width: 100%;
+//     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
+//     // margin:.165%;
+// }
+
+// .test {
+// 	padding-bottom: 50%;
+// 		.col-md-6 {
+// 			padding-bottom: 0;
+// 		} 
+
+// }
+
+// .tall-2 {
+// 	padding-bottom: 16.33%;
+// 	background-color: orange;
+// }
+
+// .tall-4 {
+// 	padding-bottom: 32.66%;
+// 	background-color: blue;
+// }
+
+// .tall-6 {
+// 	padding-bottom:  49.32%;
+// 	background-color: light-blue;
+// }
+
+// .mini {
+// 	height: 50%;
+// }
+
+// // .two-by-two {
+// //         clear: none;
+// //     width: 42%;
+// //     padding-bottom : 42%; /* = width for a 1:1 aspect ratio */
+// //     margin:.33%;
+// // }
+
+// .content {
+//     position:absolute;
+//     height:90%; /* = 100% - 2*5% padding */
+//     width:90%; /* = 100% - 2*5% padding */
+//     padding: 5%;
+// }
+
+
+
+// /*  For responsive images */
+
+// .content .rs{
+//     width:auto;
+//     height:auto;
+//     max-height:90%;
+//     max-width:100%;
+// }
+// /*  For responsive images as background */
+
+// .bg{
+//     background-position:center center;
+//     background-repeat:no-repeat;
+//     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+//     color:#fff;
+// }
