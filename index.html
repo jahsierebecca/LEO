@@ -10,11 +10,14 @@
   <title>LEO Band</title>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
   <!-- Bootstrap -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <script type="text/javascript" src="js/styles.js"></script>
+  <script type="text/javascript" src="js/backbone.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,111 +27,8 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 center-text">
-        <h1>LEO</h1>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row tall-1">
-      <div class="col-md-1 tall-1">
-        <div class="content">Row 1 col 1 Span 1</div>
-      </div>
-      <div class="col-md-1 tall-1">
-        <div class="content">Row 1 col 2 Span 1</div>
-      </div>
-      <div class="col-md-4 tall-1">
-      <div class="content">Row 1 col 3 Span 4</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content">Row 1 col 4 Span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content">Row 1 col 5 Span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content">Row 1 col 6 Span 2</div>
-      </div>
-
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row tall-4">
-      <div class="col-md-2 tall-4">
-        <div class="content tall-4">Row 2 col 1 Span 2</div>
-      </div>
-      <div class="col-md-6 tall-4">
-        <div class="content tall-4">Row 2 col 2 Span 6</div>
-      </div>
-      <div class="col-md-4 tall-2 test">
-        <!-- <div class="row tall-2"> -->
-          <div class="col-md-6 tall-2">
-            <div class="content tall-2">
-            <!-- Row 2 col 3 Span 2 (actually mini-6 -->
-            <iframe style=" margin: auto; border: 0; width: 100%; height: 100%;" src="http://bandcamp.com/EmbeddedPlayer/album=863457291/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://leomusic4.bandcamp.com/album/outlaw-covers">OUTLAW Covers by LEO</a></iframe></div>
-          </div>
-          <div class="col-md-6 tall-2">
-            <div class="content tall-2">Row 2.5 col 3 Span 2 (actually mini-6</div>
-
-          </div>
-          <div class="col-md-6 tall-2">
-            <div class="content tall-2">Row 2 col 4 Span 2 (actually mini-6</div>
-          </div>
-          <div class="col-md-6 tall-2">
-            <div class="content tall-2">
-            <!-- Row 2.5 col 4 Span 2 (actually mini-6 -->
-            <iframe style="border: 0; margin: auto; width: 100%; height: 100%;" src="http://bandcamp.com/EmbeddedPlayer/album=870765122/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://leomusic4.bandcamp.com/album/second-coming">Second Coming by LEO</a></iframe>
-            </div>
-          </div>
-        <!-- </div> -->
-      </div>
-    </div>
-
-  </div>
-  <div class="container-fluid">
-    <div class="row tall-1">
-      <div class="col-md-2 tall-1">
-        <div class="content tall-1">Row 3 col 1 span 2</div>
-      </div>
-      <div class="col-md-4 tall-1">
-        <div class="content tall-1">Row 3 col 2 span 4</div>
-      </div>
-      <div class="col-md-2 tall-1 rotates">
-        <div class="content tall-1">Row 3 col 3 span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content tall-1">Row 3 col 4 span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content tall-1">Row 3 col 5 span 2</div>
-      </div>
-
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row tall-1">
-      <div class="col-md-4 tall-1">
-        <div class="content tall-1" id="test">Row 4 col 1 Span 4</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content">Row 4 col 2 Span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content tall-1">Row 4 col 3 Span 2</div>
-      </div>
-      <div class="col-md-2 tall-1">
-        <div class="content tall-1">Row 4 col 4 Span 2</div>
-      </div>
-      <div class="col-md-1 tall-1">
-        <div class="content tall-1">Row 4 col 5 Span 2</div>
-      </div>
-            <div class="col-md-1 tall-1">
-        <div class="content tall-1">Row 4 col 5 Span 2</div>
-      </div>
-
-    </div>
+  <div class="container-fluid" id="main-div"> 
+   
   </div>
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
