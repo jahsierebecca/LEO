@@ -3,21 +3,49 @@
 	background-size: cover;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-	background-image: url('../img/background.png');
-	// commented out for backbone work
-	//background-size: 100% 100%;
+	// padding: 30px;
+	background: #f4e69f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f4e69f 0%, #d17f80 47%, #7db9e8 78%, #f4e69f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4e69f), color-stop(47%,#d17f80), color-stop(78%,#7db9e8), color-stop(100%,#f4e69f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f4e69f 0%,#d17f80 47%,#7db9e8 78%,#f4e69f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f4e69f 0%,#d17f80 47%,#7db9e8 78%,#f4e69f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f4e69f 0%,#d17f80 47%,#7db9e8 78%,#f4e69f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f4e69f 0%,#d17f80 47%,#7db9e8 78%,#f4e69f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e69f', endColorstr='#f4e69f',GradientType=0 ); /* IE6-9 */
+// commented out for backbone work
+	// background-size: cover;
+	// height: 100%;
 }
 
-//////backbone
-#purple-div{
-  padding: 1em;
-  border: 1px solid #CF00D9;
-  background: #F3A0F7;
-  color: #88008F;
+
+
+#page-contents {
+	// min-height: 100%;
+	padding: 30px;
+	/* equal to footer height */
+	// margin-bottom: -50px; 
 }
 
+// #page-contents:after {
+//   content: "";
+//   display: block;
+// }
+// .social-footer, .page-contents:after {
+//   height: 50px; 
+// }
+// .social-footer {
+// 	vertical-align: middle;
+//   background: orange;
+// }
 
+h1 {
+
+}
 
 h3 {
 	margin-bottom: 30px;
@@ -32,7 +60,7 @@ h3 {
 	border-color: white;
 }
 
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 	box-sizing: border-box;
 	height: 100%;
 	padding: 5px;
@@ -42,6 +70,8 @@ h3 {
 	background-size: cover;
 	box-sizing: border-box;
 	height: 100%;
+	width: 100%;
+	display: inline-block;
 	// background-color: rgba(47, 118, 149, .8);
 	position: relative;
 	border: 5px solid rgba(255, 255, 255, .5);	
@@ -69,8 +99,8 @@ h3 {
 .button:hover {
 	cursor: pointer;
 	// border-color: red;
-	.content {
-		border-color: red;
+	h3 {
+		color: red;
 	}
 }
 
@@ -87,6 +117,10 @@ h3 {
   height: 260px;
   position: relative;
   perspective: 800px;
+}
+
+.billboard {
+	background-image: url('../img/LEO_glitter.jpg')
 }
 
 .flipper {
@@ -108,34 +142,90 @@ h3 {
 
 .flipper {
 	.front {
-  	background-image: url("../img/leo_front.jpg");
-	z-index: 2;
-	height: 100%;
+	  	background-image: url("../img/LEO_volcano.jpg");
+		z-index: 2;
+		height: 100%;
+		background-size: cover;
+		background-position: middle;
 	}
 	.front-1 {
-	background-image: url("../img/leo_front.jpg");
-}
+		background-image: url("../img/leo_front.jpg");
+	}
 	.front-2 {
-		background-image: url("../img/ppp.png");
+		background-image: url("../img/leo_feather.png");
 	}
 	.front-3 {
-		background-image: url('../img/store-pic.jpg')
+		background-image: url('../img/leo_piano.jpg');
+	}
+	.front-L {
+		background-image: url('../img/LEO_L.png');
+	}
+	.front-E {
+		background-image: url('../img/LEO_E.png');
+	}
+	.front-O {
+		background-image: url('../img/LEO_O.png');
 	}
 }
-.flipper .back {
-	background-image: url("../img/square3.jpg");
-	height: 100%;
-	background-color: rgba(47, 118, 149, .5);
-	transform: rotateY( 180deg );
-	overflow: scroll;
+.flipper {
+	.back {
+		// background-image: url("../img/leo_piano.jpg");
+		height: 100%;
+		width: 100%;
+		// background-color: rgba(47, 118, 149, .5);
+		transform: rotateY( 180deg );
+		overflow: scroll;
+		// padding: 5%;
+	}
+	.back-color {
+		background-color: rgba(47, 118, 149, .5);		
+	}
+	.back-L {
+		background-image: url('../img/LEO_L_Back.png');
+	}
+	.back-E {
+		background-image: url('../img/LEO_E_Back.png');
+	}
+	.back-O {
+		background-image: url('../img/LEO_O_Back.png');
+	}
 }
 
 .flipper.flipped {
   transform: rotateY( 180deg );
 }
 
+.flipper.flipped-2 {
+  transform: rotateY( 180deg );
+}
+
+.flipper.full-rotate {
+  transform: rotateY( 360deg );
+}
+
 .flipper:hover {
   transform: rotateY( 180deg );
+}
+
+.tall-1 {}
+.tall-2 {}
+.tall-4 {}
+
+
+@media all and (min-width: 768px)  {
+	// .tall-1 {
+	// 	color: red;
+	// }
+	.tall-2 {}
+	.tall-4 {}
+}
+
+//////backbone
+#purple-div{
+  padding: 1em;
+  border: 1px solid #CF00D9;
+  background: #F3A0F7;
+  color: #88008F;
 }
 
 // .flip-container {
@@ -225,7 +315,7 @@ h3 {
 // //end bootstrap style
 
 
-// .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, {
+// .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, {
 //     float:left;
 //     position: relative;
 //     width: 8%;
@@ -238,42 +328,42 @@ h3 {
 
 
 
-// .col-md-1 {
+// .col-sm-1 {
 // 	width: 8%;
 //     padding-bottom : 8%; /* = width for a 1:1 aspect ratio */
 //     margin:.165%;
 //     background-color: red;
 // }
 
-// .col-md-2 {
+// .col-sm-2 {
 // 	width: 16.33%;
 //     // padding-bottom : 16%; /* = width for a 1:1 aspect ratio */
 //     margin:.165%;
 //     background-color: yellow;
 // }
 
-// .col-md-3 {
+// .col-sm-3 {
 // 	width: 25;
 //     // padding-bottom : 24%; /* = width for a 1:1 aspect ratio */
 //     margin:.165%;
 //     background-color: green;
 // }
 
-// .col-md-4 {
+// .col-sm-4 {
 // 	width: 32.66%;
 //     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
 //     margin:.165%;
 //     background-color: purple
 // }
 
-// .col-md-6 {
+// .col-sm-6 {
 // 	width: 49.32%;
 //     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
 //     margin:.165%;
 //     background-color: green;
 // }
 
-// .col-md-12 {
+// .col-sm-12 {
 // 	width: 100%;
 //     // padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
 //     // margin:.165%;
@@ -281,7 +371,7 @@ h3 {
 
 // .test {
 // 	padding-bottom: 50%;
-// 		.col-md-6 {
+// 		.col-sm-6 {
 // 			padding-bottom: 0;
 // 		} 
 

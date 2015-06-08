@@ -14,10 +14,9 @@
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/backbone/backbone.js"></script>
   <!-- Bootstrap -->
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <script type="text/javascript" src="js/styles.js"></script>
-  <script type="text/javascript" src="js/backbone.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,11 +26,253 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container-fluid" id="main-div"> 
-   
+  <div id="page-contents">
+    <!--   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 center-text">
+        <h1>LEO</h1>
+      </div>
+    </div>
+  </div>
+  -->
+  <!--ROW 1-->
+  <div class="container-fluid">
+    <div class="row tall-1">
+      <div class="col-sm-2 tall-2">
+        <div class="content">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front front-L"></div>
+              <div class="back back-L"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 tall-2">
+        <div class="content">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front front-E"></div>
+              <div class="back back-E"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 tall-2">
+        <div class="content">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front front-O"></div>
+              <div class="back back-O"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 tall-2">
+        <div class="content billboard">
+          </div>
+        </div>
+
+    </div>
+  </div>
+<div class="container-fluid">
+  <div class="row tall-1">
+    <div class="col-sm-1 tall-1">
+      <div class="content">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front-1"></div>
+            <div class="back">
+              <p>other side!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 1 col 1 Span 1 --> </div>
+    </div>
+    <div class="col-sm-1 tall-1">
+      <div class="content small-square">
+        <!-- Row 1 col 2 Span 1 --> </div>
+    </div>
+    <div class="col-sm-4 tall-1">
+      <div class="content">
+      <!-- Row 1 col 3 Span 4 -->
+      </div>
+    </div>
+    <div class="col-sm-2 tall-1 button">
+      <div class="content" id="news-button">
+        <h3>News</h3>
+      </div>
+    </div>
+    <div class="col-sm-1 tall-1 small-hide">
+      <div class="content">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front-2"></div>
+            <div class="back">
+              <p>other side!</p>
+            </div>
+          </div>
+        </div>
+        <!-- `Row 1 col 5 Span 1 --> </div>
+    </div>
+    <div class="col-sm-1 tall-1 small-hide">
+      <div class="content">
+        <!-- Row 1 col 6 Span 1 -->
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front-2"></div>
+            <div class="back">
+              <p>other side!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 tall-1">
+      <div class="content">
+      <!-- Row 1 col 7 Span 2 -->
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--End of ROW -->
+
+<!--ROW 2-->
+<div class="container-fluid">
+  <div class="row tall-4">
+    <div class="col-sm-3 tall-4">
+      <div class="content">
+        <!-- Row 2 col 1 Span 2 -->
+        <div  id="about-toggle "class="flip-container">
+          <div class="flipper" id="about-content">
+            <div class="front"></div>
+            <div class="back back-color" id="tall-banner">
+              <div id="tall-info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7 tall-4">
+      <div class="content">
+        <div  id="about-toggle "class="flip-container">
+          <!-- Row 2 col 2 span 6-->
+          <div class="flipper" id="main-banner-container">
+            <div class="front-3"></div>
+            <div class="back back-color" id="main-banner">
+              <div id="main-info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2 tall-2 test">
+      <!-- <div class="row tall-2">
+      -->
+      <div class="col-sm-12 tall-2">
+        <div class="content">
+          <!-- Row 2 col 3 Span 2 (actually mini-6 -->
+          <iframe style=" margin: auto; border: 0; width: 100%; height: 100%;" src="http://bandcamp.com/EmbeddedPlayer/album=863457291/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless>
+<!--             <a href="http://leomusic4.bandcamp.com/album/outlaw-covers">OUTLAW Covers by LEO</a> -->
+          </iframe>
+        </div>
+      </div>
+      <!--         <div class="col-sm-6 tall-2">
+      <div class="content">
+        <img src="img/leo_piano.jpg" class="img-responsive">
+        -->
+        <!-- Row 2.5 col 3 Span 2 (actually mini-6 -->
+        <!-- </div> </div>
+      -->
+      <!-- <div class="col-sm-6 tall-2">
+      <div class="content">Row 2 col 4 Span 2 (actually mini-6</div>
+    </div>
+    -->
+    <div class="col-sm-12 tall-2">
+      <div class="content">
+        <!-- Row 2.5 col 4 Span 2 (actually mini-6 -->
+        <iframe style="border: 0; margin: auto; width: 100%; height: 100%;" src="http://bandcamp.com/EmbeddedPlayer/album=870765122/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless>
+   <!--        <a href="http://leomusic4.bandcamp.com/album/second-coming">Second Coming by LEO</a> -->
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of ROW 2-->
+
+<!--ROW 3-->
+</div>
+<div class="container-fluid">
+<div class="row tall-1">
+  <div class="col-sm-2 tall-1">
+    <div class="content">
+    <!-- Row 3 col 1 span 2 -->
+    </div>
+  </div>
+  <div class="col-sm-4 tall-1 button">
+    <div class="content" id="collaboration-button">
+      <!-- Row 3 col 2 span 4 -->
+      <h3>Collaboration</h3>
+    </div>
+  </div>
+  <div class="col-sm-2 tall-1">
+    <div class="content rotates">
+    <!-- Row 3 col 3 span 2 -->
+    </div>
+  </div>
+  <div class="col-sm-2 tall-1 button">
+    <div class="content " id="about-button">
+      <h3>About</h3>
+    </div>
+  </div>
+  <div class="col-sm-2 tall-1">
+    <div class="content">
+    <!-- Row 3 col 5 span 2 -->
+    </div>
   </div>
 
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</div>
+</div>
+<!--End of ROW 3-->
+
+<!--
+  <div class="container-fluid">
+<div class="row tall-1">
+<div class="col-sm-4 tall-1">
+  <div class="content" id="test">Row 4 col 1 Span 4</div>
+</div>
+<div class="col-sm-2 tall-1">
+  <div class="content">Row 4 col 2 Span 2</div>
+</div>
+<div class="col-sm-2 tall-1">
+  <div class="content">Row 4 col 3 Span 2</div>
+</div>
+<div class="col-sm-2 tall-1">
+  <div class="content">Row 4 col 4 Span 2</div>
+</div>
+<div class="col-sm-1 tall-1">
+  <div class="content">Row 4 col 5 Span 2</div>
+</div>
+<div class="col-sm-1 tall-1">
+  <div class="content">Row 4 col 5 Span 2</div>
+</div>
+
+</div>
+</div>
+-->
+<div class="social-footer">
+<p class="center-text">
+<a href="https://twitter.com/megandiana" target="blank">Twitter &#8226</a>
+<a href="https://www.facebook.com/I.LIKE.LEO" target="blank">Facebook &#8226</a>
+<a href="http://leomusic4.bandcamp.com/" target="blank">Bandcamp &#8226</a>
+<a href="https://soundcloud.com/music-by-leo" target="blank">Soundcloud &#8226</a>
+<a href="mailto:megandiana@gmail.com">Email</a>
+</p>
+</div>
+  </div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
